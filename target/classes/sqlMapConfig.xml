@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<!-- 这个配置使全局映射器启用或者禁用 -->
+		<setting name="cacheEnabled" value="true"/>
+		<!-- 运许jdbc支持生成的键 -->
+		<setting name="useGeneratedKeys" value="true"/>
+		<!-- 配置默认执行器，RESUE执行器重用预处理语句 -->
+		<setting name="defaultExecutorType" value="REUSE"/>
+		<!-- 设置超时时间 -->
+		<setting name="defaultStatementTimeout" value="25000"/>
+		<!-- 全局启用或禁用延迟加载 -->
+		<setting name="lazyLoadingEnabled" value="true"/>
+	</settings>
+	
+	<!-- 设置别名 -->
+	<typeAliases>
+		<typeAlias alias="user" type="cn.java.personal.pojo.User"/>
+		<typeAlias alias="award" type="cn.java.personal.pojo.Award"/>
+		<typeAlias alias="education" type="cn.java.personal.pojo.Education"/>
+		<typeAlias alias="project" type="cn.java.personal.pojo.Project"/>
+		<typeAlias alias="skill" type="cn.java.personal.pojo.Skill"/>
+		<typeAlias alias="work" type="cn.java.personal.pojo.Work"/>
+	</typeAliases>
+	
+	<!-- 设置映射关系 -->
+	<!-- <mappers>
+		<mapper resource="cn/java/personal/daomapper/UserMapper.xml"/>
+	</mappers>-->
+</configuration>

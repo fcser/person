@@ -1,0 +1,135 @@
+body {
+	background: url(../img/beijing.jpg);
+	margin-left: -80px;
+}
+
+.row {
+	width: 1200px;
+	height: 850px;
+	background: #eeeeee;
+	margin-left: 400px;
+}
+
+.row .tm-title {
+	width: 800px;
+	height: 50px;
+	text-align: center;
+	margin-left: 200px;
+	font-size: 24px;
+	padding-top: 40px;
+}
+
+.row .tm-text p {
+	width: 800px;
+	height: 120px;
+	line-height: 30px;
+	font-size: 16px;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
+.row .tm-text p:nth-child(2) {
+	width: 800px;
+	height: 200px;
+	line-height: 30px;
+	font-size: 16px;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
+.row .tm-text p:nth-child(5) {
+	width: 800px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	margin-left: 500px;
+	margin-top: -10px;
+}
+
+.row .tm-text p:nth-child(6) {
+	width: 800px;
+	height: 50px;
+	line-height: 30px;
+	font-size: 16px;
+	margin-left: 500px;
+	margin-top: 20px;
+}
+
+.header {
+	width: 50px;
+	height: 30px;
+	font-size: 16px;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 1400px;
+	margin-top: 20px;
+	ss text-align: center;
+	font-weight: block;
+}
+
+.header a {
+	color: #000;
+	text-decoration: none;
+}
+
+/*.xinwen{
+	width: 100%;
+	height: 600px;
+}
+.xinwen .xw-left{
+	width: 450px;
+	height: 500px;
+	margin-left: 40px;
+	color: #F0F8FF;
+}
+.xinwen .xw-left h3{
+	font-size: 24px;
+	margin-top: 20px;
+	margin-left: 170px;
+}
+.xinwen .xw-left .xw-l-t{
+	width: 400px;
+	height: 400px;
+	margin-left: 190px;
+	text-align: left;
+	margin-top: 10px;
+	box-shadow: 4px 3px 5px #DDDDDD;
+}
+.xinwen .xw-left .xw-l-s{
+	width: 50px;
+	height: 30px;
+	margin-left: 490px;
+	margin-top: 10px;
+	box-shadow: 4px 3px 5px #DDDDDD;
+}
+.xinwen .xw-right{
+	color: aliceblue;
+	width: 600px;
+	height: 450px;
+	margin-left: 800px;
+	margin-top: -440px;
+	
+}
+.xinwen .xw-right p{
+	width: 500px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.xinwen .xw-right .xw-r-s{
+	width: 500px;
+    height: 100px;
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+.xinwen .xw-right .message{
+	font-size: 16px;
+	margin-left: 420px;
+	width: 50px;
+	height: 30px;
+	text-align: center;
+	margin-top: -15px;
+}
+*/

@@ -1,0 +1,96 @@
+﻿* {
+	padding: 0;
+	margin: 0;
+}
+
+body,html {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background: url(../img/1.jpg) no-repeat;
+	background-size: 100% 100%;
+	/*background-position-x: 400px;*/
+	/*background-position-y: 54px;*/
+}
+
+.login {
+	margin: 150px auto;
+	min-height: 320px;
+	max-width: 320px;
+	padding: 40px;
+	background-color: rgba(255, 255, 255, 0.7);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+}
+
+.message {
+	text-align: center;
+	padding: 18px 60px 18px 60px;
+	background: rgba(255, 255, 255, 0);
+	color: #fff;
+	font-size: 16px;
+}
+/*通过属性选择器，设置input*/
+input[type=text],input[type=password],select {
+	border: 1px solid #DCDEE0;
+	height: 50PX;
+	padding: 0px 16px;
+	font-size: 14px;
+	width: 85%;
+	margin-left: 2%;
+}
+
+hr.hr15 {
+	height: 15px;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+input[type=radio] {
+	padding: 7px 20px;
+	margin-left: 11%;
+	margin-right: 0%;
+	font-size: 18px;
+}
+
+input[type=submit] {
+	display: inline-block;
+	padding: 7px 20px;
+	margin-left: 37%;
+	font-size: 18px;
+	background-color: #27A9E3;
+	color: white;
+	width: 80px;
+	height: 37px;
+}
+
+input[type=submit1] {
+	text-align: center;
+	display: inline-block;
+	padding: 5px 5px;
+	margin-left: 65px;
+	font-size: 18px;
+	background-color: #27A9E3;
+	color: white;
+	width: 117px;
+	height: 24px;
+}
+
+.register {
+	float: right;
+	margin-right: 48px;
+	margin-left: auto;
+	color: #27A9E3;
+}
+
+.wangjimima {
+	float: left;
+	margin-right: auto;
+	margin-left: 17px;
+}

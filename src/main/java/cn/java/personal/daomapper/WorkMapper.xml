@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.java.personal.dao.WorkMapper">
+    <insert id="insertWork" useGeneratedKeys="true" keyProperty="id" parameterType="work">
+   		insert into work(userId,wname,wbegin,wend,mywork,wintro) values(#{userId},#{wname},#{wbegin},#{wend},#{mywork},#{wintro})
+    </insert>
+
+	<update id="updateWork" parameterType="work">
+		update work set wname=#{wname},wbegin=#{wbegin},wend=#{wend},mywork=#{mywork},wintro=#{wintro} where id=#{id}
+	</update>	
+	
+	<select id="queryWork" parameterType="int" resultType="work">
+		select * from work where userId=#{userId}
+	</select>
+	
+	<delete id="deleteWorks" parameterType="int">
+		delete from work where userId=#{userId}
+	</delete>
+	
+	<delete id="deleteWork" parameterType="int">
+		delete from work where id=#{id}
+	</delete>
+</mapper>

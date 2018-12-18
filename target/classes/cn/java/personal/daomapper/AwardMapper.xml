@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.java.personal.dao.AwardMapper">
+    <insert id="insertAward" useGeneratedKeys="true" keyProperty="id" parameterType="award">
+   		insert into award(userId,award,time) values(#{userId},#{award},#{time})
+    </insert>
+
+	<update id="updateAward" parameterType="award">
+		update award set award=#{award},time={time} where id=#{id}
+	</update>	
+	
+	<select id="queryAward" parameterType="int" resultType="award">
+		select * from award where userId=#{userId}
+	</select>
+	
+	<delete id="deleteAwards" parameterType="int">
+		delete from award where userId=#{userId}
+	</delete>
+	
+	<delete id="deleteAward" parameterType="int">
+		delete from award where id=#{id}
+	</delete>
+</mapper>

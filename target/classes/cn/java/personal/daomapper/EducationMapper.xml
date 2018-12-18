@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.java.personal.dao.EducationMapper">
+    <insert id="insertEducation" useGeneratedKeys="true" keyProperty="id" parameterType="education">
+   		insert into education(userId,school,major,intro,begin,end) values(#{userId},#{school},#{major},#{intro},#{begin},#{end})
+    </insert>
+
+	<update id="updateEducation" parameterType="education">
+		update education set school=#{school},major=#{major},intro=#{intro},begin=#{begin},end=#{end} where id=#{id}
+	</update>	
+	
+	<select id="queryEducation" parameterType="int" resultType="education">
+		select * from education where userId=#{userId}
+	</select>
+	
+	<delete id="deleteEducations" parameterType="int">
+		delete from education where userId=#{userId}
+	</delete>
+	
+	<delete id="deleteEducation" parameterType="int">
+		delete from education where id=#{id}
+	</delete>
+</mapper>
